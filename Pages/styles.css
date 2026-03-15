@@ -743,9 +743,18 @@ grid-column:  span 2;
  padding:5%
 }
 
+.twobythree-outline {
+grid-column: span 2;
+grid-row: span 3;
+border-style: solid;
+border-color: white;
+padding:5%
+}
+
 .twobythree {
 grid-column: span 2;
 grid-row: span 3;
+ padding:5%
 }
 
 .twobyfive {
@@ -822,6 +831,22 @@ border-style: solid;
 
 .fivebyone-outline {
 grid-column: span 5;
+border-style: solid;
+ border-color: white;
+ padding:5%;
+}
+
+.sixbyone-outline {
+grid-column: span 6;
+
+border-style: solid;
+ border-color: white;
+ padding:5%;
+}
+
+.sixbytwo-outline {
+grid-column: span 6;
+grid-row: span 2;
 border-style: solid;
  border-color: white;
  padding:5%;
