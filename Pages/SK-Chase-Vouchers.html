@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
-        
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -30,39 +30,13 @@
 
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const scrollToTopBtn = document.getElementById('ScrollBtn');
-            const scrollThreshold = 200; // Show button after scrolling 200px
 
-            window.onscroll = function () { scrollFunction() };
-
-            function scrollFunction() {
-                if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-                    scrollToTopBtn.style.display = "block";
-                    scrollToTopBtn.style.opacity = "1"; // Make it appear
-                } else {
-                    scrollToTopBtn.style.display = "none"; // Hide it completely
-                    scrollToTopBtn.style.opacity = "0"; // Make it disappear
-                }
-            }
-
-            scrollToTopBtn.addEventListener('click', () => {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth' // This creates the visual, smooth scroll
-                });
-            });
-        });
-
-
-    </script>
 
 
     <div class="screen-100">
         <div class="spacer">
             <h1>
-                SK Chase <sup>design</sup>
+                SK Chase
             </h1>
             <div class="vertical-spacer">
                 <h3><a href="#story">the story - voucher design</a></h3>
@@ -107,205 +81,235 @@
                 helped to define the scope and requirements of the redesign, offering her depth of understanding of the
                 system and user journeys, in addition to facilitating feedback. I also worked alongside Tom from
                 HappyPorch, who was implementing the design. His knowledge of the CMS and technical insight was
-                invaluable in ensuring the feasibility of implementing my designs.
+                invaluable in ensuring the feasibility of my designs.
             </p>
             <p class="large-text">
                 For this project, my process looked like: <br>
-                research > concept development > feedback > refinement > stress testing > solution
+                <b>research > concept development > feedback > refinement > stress testing > handover</b>
             </p>
-            <p class="large-text"><b><em>"Thank you for your amazing vision and imagination (along with understanding
-                        the client needs) when it came to helping with the new e-voucher design - it's so good to know
-                        that will very soon be up and running! I hope we get to work together again at some point
-                        :)"</em></b>
-                <br>
-            </p>
-            <p class="large-text"><em>Jan Harding, Product Manager at <a href="https://skchase.com/">SK Chase</a></em>
-            </p>
+            <div class="vertical-spacer">
+                <p class="large-text"><b><em>"Thank you for your amazing vision and imagination (along with
+                            understanding
+                            the client needs) when it came to helping with the new e-voucher design - it's so good to
+                            know
+                            that will very soon be up and running! I hope we get to work together again at some point
+                            :)"</em></b>
+                    <br>
+                </p>
+                <p class="large-text"><em>Jan Harding, Product Manager at <a href="https://skchase.com/">SK
+                            Chase</a></em>
+                </p>
+            </div>
         </div>
     </div>
 
-
-    <div class="container1">
-        <div class="fullwidth">
-            <div id="print-voucher">
-                <h1 class="grid-header">print voucher</h1>
+    <div class="vertical-spacer">
+        <div class="container1">
+            <div class="fullwidth">
+                <div id="print-voucher">
+                    <h1 class="grid-header">print voucher</h1>
+                </div>
             </div>
-        </div>
-        <div class="fullwidth-outline">
-            <p>SK Chase provided me with some samples of potential concepts that seemed to fit their
-                needs. I also spent some time looking at various user journeys for e-voucher redemptions online,
-                focusing on information presentation and user interaction. While this provided a good jumping off point
-                to start thinking about the core issue of balancing aesthetics and clarity of information, it also
-                highlighted the fact that a bespoke solution would be needed to really tackle these core issues and
-                elevate the user experience.</p>
-        </div>
-        <div class="oneby1"><img class="gallery-image" src="Assets\SKC-Vouchers\Third-page.png"></div>
-        <div class="oneby1"><img class="gallery-image" src="Assets\SKC-Vouchers\Third-page-light.png">
-        </div>
-        <div class="twoby1-outline">
-            <p>The general anatomy of the template needed to accommodate 3 things:</p>
-            <ul id="bullet-list">
-                <li id="bullet-item">Decorative image (except for ink-saving version) and hotel logo</li>
-                <li id="bullet-item">Voucher content & personal message</li>
-                <li id="bullet-item">Booking information</li>
-            </ul>
-        </div>
-        <div class="threeby2-outline">
-            <p>I mapped out overlays of ½ and ⅓ folds while designing the layout of the page to ensure the folds don’t
-                overlap content fields. These dimensions, when folded, fit standard-sized envelopes.</p>
-            <p>This can only be done approximately due to the variable lengths of the text fields and their ability to
-                expand, but the folds still lie in the white space between fields for the majority of use cases,
-                allowing the vouchers to be folded and still look attractive when opened back up.</p>
-        </div>
-        <div class="twoby1"><img class="gallery-image" src="Assets\SKC-Vouchers\Fold-layout-half.png">
-        </div>
-        <div class="twoby1"><img class="gallery-image" src="Assets\SKC-Vouchers\Fold-layout-thirds.png">
-        </div>
+            <div class="fullwidth-outline">
+                <p>SK Chase provided me with some samples of potential concepts that seemed to fit their
+                    needs. I also spent some time looking at various user journeys for e-voucher redemptions online,
+                    focusing on information presentation and user interaction. While this provided a good jumping off
+                    point
+                    to start thinking about the core issue of balancing aesthetics and clarity of information, it also
+                    highlighted the fact that a bespoke solution would be needed to really tackle these core issues and
+                    elevate the user experience.</p>
+            </div>
+            <div class="oneby1"><img class="gallery-image" src="Assets\SKC-Vouchers\Third-page.png"
+                    alt="basic voucher wireframe with image space"></div>
+            <div class="oneby1"><img class="gallery-image" src="Assets\SKC-Vouchers\Third-page-light.png"
+                    alt="basic voucher wireframe without image space">
+            </div>
+            <div class="threebyone-outline">
+                <p>The general anatomy of the template needed to accommodate 3 things:</p>
+                <ul id="bullet-list">
+                    <li id="bullet-item">Decorative image (except for ink-saving version) and hotel logo</li>
+                    <li id="bullet-item">Voucher content & personal message</li>
+                    <li id="bullet-item">Booking information</li>
+                </ul>
+            </div>
+            <div class="threeby2-outline">
+                <p>I mapped out overlays of ½ and ⅓ folds while designing the layout of the page to ensure the folds
+                    don’t
+                    overlap content fields. These dimensions, when folded, fit standard-sized envelopes.</p>
+                <p>This can only be done approximately due to the variable lengths of the text fields and their ability
+                    to
+                    expand, but the folds still lie in the white space between fields for the majority of use cases,
+                    allowing the vouchers to be folded and still look attractive when opened back up.</p>
+            </div>
+            <div class="twoby1"><img class="gallery-image" src="Assets\SKC-Vouchers\Fold-layout-half.png"
+                    alt="half-page fold graphic">
+            </div>
+            <div class="twoby1"><img class="gallery-image" src="Assets\SKC-Vouchers\Fold-layout-thirds.png"
+                    alt="thirds page fold graphic">
+            </div>
 
-        <div class="twobythree"><img class="gallery-image" src="Assets\SKC-Vouchers\PrintVoucher-old.png">
-        </div>
-        <div class="threebyone-outline">
-            <p>
-                < The old design evenly distributes all of the booking information across the page, which is possible as
+            <div class="twobythree"><img class="gallery-image" src="Assets\SKC-Vouchers\PrintVoucher-old.png"
+                    alt="previous verison of print voucher">
+            </div>
+            <div class="threebyone-outline">
+                <p>The old design evenly distributes all of the booking information across the page, which is possible
+                    as
                     it doesn’t feature an image. My idea was to make a design with a large image possible by condensing
                     and organising all the booking information into a much smaller space, and utilising that space more
                     efficiently.</p>
-        </div>
-        <div class="threebyone"><img class="gallery-image" src="Assets/SKC-Vouchers\Bottom_Component-old.png"></div>
-        <div class="threebyone-outline">
-            <p>^ My first priority was drafting the booking information fields. I blocked out the necessary number of
-                fields for the maximum amount of info, grouping fields by similarity. </p>
-        </div>
-        <div class="onebyone-outline">
-            <p>Feedback round: bottom component ></p>
-        </div>
-        <div class="twobyone-outline">
-            <p>“a bit too industrial/utilitarian for our more traditional clients”</p>
-        </div>
-        <div class="twobyone-outline">
-            <p>“we can lose the long, natural wording of section headers and shorten them”</p>
-        </div>
-        <div class="fullwidth-outline">
-            <p>I used PenPot flex boards to create the layout. This allowed me to mock up the concept using CSS flex. I
-                used this to simulate how information fields re-format when different fields were hidden (opted out of
-                by hotel clients), to mimic the behaviour of the final template.
-                My aim was to account for all possibilities of hidden/visible fields so that the information bar would
-                look aesthetically pleasing without any obvious blank spaces or overflow.</p>
-        </div>
-        <div class="threebyone"><img class="gallery-image" src="Assets\SKC-Vouchers\flex-components.png">
-        </div>
-        <div class="twobyone-outline">
-            <p>
-                < flex elements in Penpot </p>
-        </div>
-        <div class="fullwidth"><img class="gallery-image" src="Assets\SKC-Vouchers\Bottom-component-redistribute.gif">
-        </div>
-        <div class="fullwidth-outline">
-            <p>^ 2nd iteration: I removed most vertical box outlines and lightened the remaining dividers. I shortened
-                section headers, added an ‘address’ field and also added fine print at bottom of section, on request.
-            </p>
-        </div>
-        <div class="onebyone"><img class="gallery-image" src="Assets\SKC-Vouchers\SKC-arc1.png"></div>
-        <div class="onebyone"><img class="gallery-image" src="Assets\SKC-Vouchers\SKC-arc2.png"></div>
-        <div class="onebyone"><img class="gallery-image" src="Assets\SKC-Vouchers\SKC-arc3.png"></div>
-        <div class="onebyone"><img class="gallery-image" src="Assets\SKC-Vouchers\SKC-arc4.png"></div>
-        <div class="onebyone"><img class="gallery-image" src="Assets\SKC-Vouchers\SKC-arc5.png"></div>
-        <div class="threebytwo-outline">
-            <p>The main decision for this section was how to display the hotel logo.  I opted to have the logo field
-                extending above the voucher content into the image field to maximise the available space for text. For
-                clarity and visibility, I placed the logo on a white background. I developed the arc shape to mitigate
-                dead white space, instead having the shape curve down like a ‘tab’. </p>
-            <p>I tested the proportions of the arc
-                with various logos, as they can range from wide and short, to tall and narrow, and everything in
-                between. I settled on the arc which offered a middle ground, presenting logos of any size with a little
-                breathing room.
-            </p>
-        </div>
-        <div class="twobyone"><img class="gallery-image" src="Assets\SKC-Vouchers\tall-logo-pres.png">
-        </div>
-        <div class="twobyone"><img class="gallery-image" src="Assets\SKC-Vouchers\wide-logo-pres.png">
-        </div>
-        <div class="fullwidth"><img class="gallery-image" src="Assets\SKC-Vouchers\SKC-finished.png">
-        </div>
-        <div class="fullwidth-outline">
-            <p>^ The final template designs, ready for applying hotel branding.
-            </p>
-        </div>
+            </div>
+            <div class="threebyone"><img class="gallery-image" src="Assets/SKC-Vouchers\Bottom_Component-old.png" alt="first draft of booking information component"></div>
+            <div class="threebyone-outline">
+                <p>^ My first priority was drafting the booking information fields. I blocked out the necessary number
+                    of
+                    fields for the maximum amount of info, grouping fields by similarity. </p>
+            </div>
+            <div class="onebyone-outline">
+                <p>Feedback round: bottom component ></p>
+            </div>
+            <div class="twobyone-outline">
+                <p>“a bit too industrial/utilitarian for our more traditional clients”</p>
+            </div>
+            <div class="twobyone-outline">
+                <p>“we can lose the long, natural wording of section headers and shorten them”</p>
+            </div>
+            <div class="fullwidth-outline">
+                <p>I used PenPot flex boards to create the layout. This allowed me to mock up the concept using CSS
+                    flex. I
+                    used this to simulate how information fields re-format when different fields were hidden (opted out
+                    of
+                    by hotel clients), to mimic the behaviour of the final template.
+                    My aim was to account for all possibilities of hidden/visible fields so that the information bar
+                    would
+                    look aesthetically pleasing without any obvious blank spaces or overflow.</p>
+            </div>
+            <div class="threebyone"><img class="gallery-image" src="Assets\SKC-Vouchers\flex-components.png" alt="display of flex box elements for booking info component">
+            </div>
+            <div class="twobyone-outline">
+                <p>
+                    < flex elements in Penpot </p>
+            </div>
+            <div class="fullwidth"><img class="gallery-image"
+                    src="Assets\SKC-Vouchers\Bottom-component-redistribute.gif" alt="GIF displaying component redistributing when fields are hidden">
+            </div>
+            <div class="fullwidth-outline">
+                <p>^ 2nd iteration: I removed most vertical box outlines and lightened the remaining dividers. I
+                    shortened
+                    section headers, added an ‘address’ field and also added fine print at bottom of section, on
+                    request.
+                </p>
+            </div>
+            <div class="onebyone"><img class="gallery-image" src="Assets\SKC-Vouchers\SKC-arc1.png" alt="arc mockup"></div>
+            <div class="onebyone"><img class="gallery-image" src="Assets\SKC-Vouchers\SKC-arc2.png" alt="arc mockup"></div>
+            <div class="onebyone"><img class="gallery-image" src="Assets\SKC-Vouchers\SKC-arc3.png" alt="arc mockup"></div>
+            <div class="onebyone"><img class="gallery-image" src="Assets\SKC-Vouchers\SKC-arc4.png" alt="arc mockup"></div>
+            <div class="onebyone"><img class="gallery-image" src="Assets\SKC-Vouchers\SKC-arc5.png" alt="arc mockup"></div>
+            <div class="threebytwo-outline">
+                <p>The main decision for this section was how to display the hotel logo.  I opted to have the logo field
+                    extending above the voucher content into the image field to maximise the available space for text.
+                    For
+                    clarity and visibility, I placed the logo on a white background. I developed the arc shape to
+                    mitigate
+                    dead white space, instead having the shape curve down like a ‘tab’. </p>
+                <p>I tested the proportions of the arc
+                    with various logos, as they can range from wide and short, to tall and narrow, and everything in
+                    between. I settled on the arc which offered a middle ground, presenting logos of any size with a
+                    little
+                    breathing room.
+                </p>
+            </div>
+            <div class="twobyone"><img class="gallery-image" src="Assets\SKC-Vouchers\tall-logo-pres.png" alt="Arc mockup with tall logo">
+            </div>
+            <div class="twobyone"><img class="gallery-image" src="Assets\SKC-Vouchers\wide-logo-pres.png" alt="Arc mockup with wide logo">
+            </div>
+            <div class="fullwidth"><img class="gallery-image" src="Assets\SKC-Vouchers\SKC-finished.png" alt="Three finished mockups of printable gift vouchers. One has a half page in=mage, one has a third page image and one is without image">
+            </div>
+            <div class="fullwidth-outline">
+                <p>^ The final template designs, ready for applying hotel branding.
+                </p>
+            </div>
 
-        <div class="fullwidth" id="e-voucher">
-            <h1 class="grid-header">e-voucher</h1>
+            <div class="fullwidth" id="e-voucher">
+                <h1 class="grid-header">e-voucher</h1>
+            </div>
+            <div class="twobyone"><img class="gallery-image" src="Assets\SKC-Vouchers\evoucher-old.png" alt="the previous e-voucher version">
+            </div>
+            <div class="threebyone-outline">
+                <p>
+                    < The old voucher design</p>
+                        <p>In general, the e-voucher uses the same elements I developed for the printable version, with
+                            a
+                            few
+                            modifications.
+
+                            With the addition of the ‘print’ buttons, the content is almost the same as in the printable
+                            voucher.
+
+                            It was requested that I remove the small ‘filler’ images and rework the text area for the
+                            voucher
+                            details.
+                        </p>
+            </div>
+            <div class="fullwidth-outline">
+                <p>The mobile e-voucher is optimised for easy scanning of the QR code when open on a phone. I aimed to
+                    give
+                    it a more ticket-like feel, while still maintaining consistency with the desktop layout.
+                </p>
+            </div>
+            <div class="threebyone"><img class="gallery-image" src="Assets\SKC-Vouchers\evoucher-web-image.png" alt="mockup of finished e-voucher for web viewing">
+            </div>
+            <div class="twobyfive"><img class="gallery-image" src="Assets\SKC-Vouchers\evoucher-Mobile.png" alt="mockup of finished e-voucher for mobile viewing">
+            </div>
+            <div class="threebyone-outline">
+                <p>Most of the design groundwork carries through from the print voucher design process.</p>
+
+                <p>I opted to create a new ‘card element’ with styling consistent with the new printable voucher.</p>
+
+                <p>Client hotels have the option to include an image or not, so I created an image-free version
+                    accounting
+                    for the extra space.</p>
+
+                <p>I added an extra ‘download’ button for the ink-saving version, giving the recipient a choice of
+                    layout
+                    for their voucher.</p>
+
+            </div>
+            <div class="threebyone"><img class="gallery-image" src="Assets\SKC-Vouchers\evoucher-web-image.png">
+            </div>
+            <div class="threebyone" id="reflections">
+                <h1 class="grid-header">reflections</h1>
+            </div>
+            <div class="threebyone-outline">
+                <p>This project had many technical restrictions and I’m pleased with my overall solutions, as are SK
+                    Chase
+                    and their client hotels. </p>
+
+                <p>The new designs have incorporated all design and functionality requests -</p>
+                <ul id="bullet-list">
+                    <li id="bullet-item">a large space for a decorative image</li>
+                    <li id="bullet-item">more visual consistency when accommodating edge cases such text boxes at their
+                        word
+                        limit, or large / small number of booking information fields</li>
+                    <li id="bullet-item">ink saving ‘light’ printable version</li>
+                </ul>
+
+
+                <p>Out of all the design projects I’ve worked on, this one has the furthest reach - with SK Chase’s
+                    customers purchasing, customising, printing and gifting these vouchers every day. I felt a lot of
+                    responsibility to ensure a visually pleasing new solution that enhances the gifting experience,
+                    while
+                    also remaining compatible with SK Chase’s CMS and technical requirements.</p>
+
+
+
+            </div>
+
+
+
+
+
         </div>
-        <div class="twobyone"><img class="gallery-image" src="Assets\SKC-Vouchers\evoucher-old.png">
-        </div>
-        <div class="threebyone-outline">
-            <p>
-                < The old voucher design</p>
-                    <p>In general, the e-voucher uses the same elements I developed for the printable version, with a
-                        few
-                        modifications.
-
-                        With the addition of the ‘print’ buttons, the content is almost the same as in the printable
-                        voucher.
-
-                        It was requested that I remove the small ‘filler’ images and rework the text area for the
-                        voucher
-                        details.
-                    </p>
-        </div>
-        <div class="fullwidth-outline">
-            <p>The mobile e-voucher is optimised for easy scanning of the QR code when open on a phone. I aimed to give
-                it a more ticket-like feel, while still maintaining consistency with the desktop layout.
-            </p>
-        </div>
-        <div class="threebyone"><img class="gallery-image" src="Assets\SKC-Vouchers\evoucher-web-image.png">
-        </div>
-        <div class="twobyfive"><img class="gallery-image" src="Assets\SKC-Vouchers\evoucher-Mobile.png">
-        </div>
-        <div class="threebyone-outline">
-            <p>Most of the design groundwork carries through from the print voucher design process.</p>
-
-            <p>I opted to create a new ‘card element’ with styling consistent with the new printable voucher.</p>
-
-            <p>Client hotels have the option to include an image or not, so I created an image-free version accounting
-                for the extra space.</p>
-
-            <p>I added an extra ‘download’ button for the ink-saving version, giving the recipient a choice of layout
-                for their voucher.</p>
-
-        </div>
-        <div class="threebyone"><img class="gallery-image" src="Assets\SKC-Vouchers\evoucher-web-image.png">
-        </div>
-        <div class="threebyone" id="reflections">
-            <h1 class="grid-header">reflections</h1>
-        </div>
-        <div class="threebyone-outline">
-            <p>This project had many technical restrictions and I’m pleased with my overall solutions, as are SK Chase
-                and their client hotels. </p>
-
-            <p>The new designs have incorporated all design and functionality requests -</p>
-            <ul id="bullet-list">
-                <li id="bullet-item">a large space for a decorative image</li>
-                <li id="bullet-item">more visual consistency when accommodating edge cases such text boxes at their word
-                    limit, or large / small number of booking information fields</li>
-                <li id="bullet-item">ink saving ‘light’ printable version</li>
-            </ul>
-
-
-            <p>Out of all the design projects I’ve worked on, this one has the furthest reach - with SK Chase’s
-                customers purchasing, customising, printing and gifting these vouchers every day. I felt a lot of
-                responsibility to ensure a visually pleasing new solution that enhances the gifting experience, while
-                also remaining compatible with SK Chase’s CMS and technical requirements.</p>
-
-
-
-        </div>
-
-
-
-
-
     </div>
-
     <div class="spacer">
 
         <h1>
@@ -313,10 +317,10 @@
         </h1>
         <div class="vertical-spacer">
             <h3><a href="HP-2026Refresh.html">HappyPorch Web Refresh 2026<sup>design/web/uSkinned</sup></a></h3>
-<h3><a href="HP-Branding.html">HappyPorch<sup>brand design / graphics</sup></a></h3>
-<h3><a href="CommunityCred.html">Communtity Cred<sup>web design</sup></a></h3>
-<h3><a href="FootprintsAfrica.html">Footprints Africa<sup>graphic illustration</sup></a></h3>
-<h3><a href="HP-DoodleDeepDive.html">HappyPorch Illustrations<sup>graphic illustration</sup></a></h3>
+            <h3><a href="HP-Branding.html">HappyPorch<sup>brand design / graphics</sup></a></h3>
+            <h3><a href="CommunityCred.html">Communtity Cred<sup>web design</sup></a></h3>
+            <h3><a href="FootprintsAfrica.html">Footprints Africa<sup>graphic illustration</sup></a></h3>
+            <h3><a href="HP-DoodleDeepDive.html">HappyPorch Illustrations<sup>graphic illustration</sup></a></h3>
         </div>
 
     </div>
