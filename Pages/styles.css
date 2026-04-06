@@ -570,6 +570,7 @@ div.gallery-item div.desc {
   flex-direction: row;
   align-items: center;
   margin-top: 2em;
+ 
 }
 
 
@@ -1108,7 +1109,7 @@ color: white;
 .container {
   
   display: grid;
-  grid-template-columns: repeat(5,15%);
+  grid-template-columns: repeat(8,1fr);
   background-color: #1c1a1d;
   margin-left: 5%;
   margin-right: 5%;
@@ -1123,7 +1124,7 @@ color: white;
 position:absolute;
 right: 20px;
 z-index: 1;
-width: 40%;
+width: 35%;
 float: top;
 }
 
