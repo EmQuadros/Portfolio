@@ -909,6 +909,21 @@ position: relative;
   align-items: flex-start;
 }
 
+.spacer-tall {
+  display: flex;
+  padding-left:5%;
+  padding-right:5%;
+  margin-bottom:110px;
+  width: 100%;
+  height:70vh;
+  flex-direction:column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
 .screen-100 {
 display: flex;
   align-items: center;
@@ -1459,7 +1474,7 @@ border-style: solid;
 .container {
   
   display: grid;
-  grid-template-columns: repeat(5,15%);
+  grid-template-columns: repeat(5,1fr);
   background-color: #1c1a1d;
   margin-left: 5%;
   margin-right: 5%;
@@ -1497,6 +1512,13 @@ border-style: solid;
   
 }
 
+.onebytwo-outline {
+  grid-column:  span 5;
+border-style: solid;
+ border-color: white;
+ padding:5%
+}
+
 .twobyone {
  grid-column:  span 5;
 }
@@ -1523,6 +1545,15 @@ grid-column:  span 5;
 
 .twobythree {
 grid-column: span 5;
+
+}
+
+.twobythree-outline {
+grid-column:  span 5;
+  grid-row: span 3;
+  border-style: solid;
+ border-color: white;
+ padding:5%
 
 }
 
@@ -1556,8 +1587,8 @@ border-style: solid;
 }
 
 .threebythree {
-grid-row: span 3;
-  grid-column:  span 3;
+grid-row: span ;
+  grid-column:  span 5;
 }
 
 .threebyfour {
